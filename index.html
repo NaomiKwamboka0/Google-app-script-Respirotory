@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> NAOMI KWAMBOKA ONYANCHA | Portfolio</title>
+    <title>Your Name | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -19,20 +19,20 @@
             scroll-behavior: smooth;
         }
 
-        /* Video Background */
+        /* Background Video */
         .video-bg {
             position: fixed;
             right: 0;
             bottom: 0;
             min-width: 100%;
             min-height: 100%;
-            z-index: -1;
+            z-index: -2;
             object-fit: cover;
         }
 
-        /* Overlay */
+        /* Overlay to make text readable */
         .overlay {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
@@ -48,7 +48,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            position: relative;
+            padding: 20px;
         }
 
         h1 {
@@ -58,17 +58,17 @@
 
         p.tagline {
             font-size: 1.5em;
-            color: #f1c40f;
+            color: #00ffcc;
         }
 
         section {
-            background-color: #1e1e1e;
-            padding: 40px;
+            background-color: #1a1a1a;
+            padding: 50px 20px;
             text-align: center;
         }
 
         section h2 {
-            color: #f1c40f;
+            color: #00ffcc;
             margin-bottom: 20px;
         }
 
@@ -82,11 +82,20 @@
             text-align: center;
             font-size: 14px;
         }
+
+        a {
+            color: #00ffcc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
-  <!-- Computer-Themed Background Video -->
+    <!-- Computer-Themed Background Video -->
     <video autoplay muted loop class="video-bg">
         <source src="https://cdn.pixabay.com/video/2018/10/25/18562-290274378_large.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
@@ -100,13 +109,18 @@
 
     <section>
         <h2>Welcome to My Portfolio</h2>
-        <p>This website will showcase my resume, projects, and lab challenges. Scroll down to explore more!</p>
+        <p>This site showcases my resume, projects, and lab challenges.</p>
     </section>
 
     <footer>
-        &copy; 2025 Naomi Kwamboka. All rights reserved.
+        &copy; 2025 Your Name. Connect with me on 
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a> | 
+        <a href="mailto:your@email.com">Email</a>
     </footer>
 
 </body>
 </html>
+
+
+
 
