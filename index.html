@@ -17,27 +17,21 @@
             font-family: 'Montserrat', sans-serif;
             color: white;
             scroll-behavior: smooth;
+            position: relative;
         }
 
-        /* Background Video */
-        .video-bg {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -2;
-            object-fit: cover;
-        }
-
-        /* Overlay to make text readable */
-        .overlay {
+        /* Background image with dark overlay */
+        body::before {
+            content: "";
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.6);
+            background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.4);
             z-index: -1;
         }
 
@@ -62,7 +56,7 @@
         }
 
         section {
-            background-color: #1a1a1a;
+            background-color: rgba(0, 0, 0, 0.7);
             padding: 50px 20px;
             text-align: center;
         }
@@ -88,7 +82,7 @@
         }
 
         footer {
-            background-color: #111;
+            background-color: rgba(0, 0, 0, 0.8);
             padding: 20px;
             text-align: center;
             font-size: 14px;
@@ -106,16 +100,9 @@
 </head>
 <body>
 
-    <!-- Tech-Themed Background Video -->
-    <video autoplay muted loop class="video-bg">
-        <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
-    <div class="overlay"></div>
-
     <header>
         <h1>NAOMI KWAMBOKA ONYANCHA</h1>
-        <p class="tagline">Cybersecurity Enthusiast | Google Apps Script Developer | Problem Solver</p>
+        <p class="tagline">Cybersecurity Enthusiast | Google App Script Developer | Problem Solver</p>
     </header>
 
     <section>
@@ -149,3 +136,4 @@
 
 </body>
 </html>
+
