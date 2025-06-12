@@ -1,168 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Lab Challenges</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f4f4f4;
-    }
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-    }
-    .lab {
-      background-color: #fff;
-      padding: 20px;
-      margin-bottom: 25px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #3498db;
-    }
-    ul {
-      margin-top: 0;
-    }
-    a {
-      color: #e74c3c;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Cybersecurity Lab Challenges | Naomi Kwamboka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            scroll-behavior: smooth;
+            position: relative;
+        }
+
+        /* Background image with dark overlay */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1581093588401-934eebf7a4bb?auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.4);
+            z-index: -1;
+        }
+
+        header {
+            padding: 60px 20px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #00ffcc;
+            margin-bottom: 10px;
+        }
+
+        section {
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            border-radius: 16px;
+        }
+
+        h2 {
+            color: #00ffcc;
+            margin-bottom: 20px;
+        }
+
+        .lab {
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .lab h3 {
+            color: #00ffcc;
+            font-size: 1.5em;
+        }
+
+        .lab p, .lab ul {
+            margin: 10px 0;
+            font-size: 1.05em;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        a {
+            color: #00ffcc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
 </head>
 <body>
-  <h1>🧪 Lab Challenges</h1>
 
-  <div class="lab">
-    <h2>Analyzing Network Traffic with Wireshark</h2>
-    <p><strong>Description:</strong> In this lab, I used Wireshark to capture and analyze real-time network traffic. The goal was to understand how data packets move across a network and identify key protocol behaviors such as TCP handshakes, HTTP requests, and DNS lookups.</p>
-    <p><strong>Tools Used:</strong></p>
-    <ul>
-      <li>Wireshark</li>
-      <li>Local Area Network (LAN)</li>
-      <li>Web Browser for traffic generation</li>
-    </ul>
-    <p><strong>Key Takeaways:</strong></p>
-    <ul>
-      <li>Learned to filter and inspect TCP/IP packets</li>
-      <li>Understood how protocols like DNS, HTTP, and TCP work in real-time</li>
-      <li>Developed skills in identifying potential security risks in traffic captures</li>
-    </ul>
-    <p><strong>View Lab:</strong> <a href="https://drive.google.com/file/d/1kVbPLi7QgFzWr8kszT5mEwUwryDfsypF/view?usp=drive_link" target="_blank">View File</a></p>
-  </div>
+<header>
+    <h1>Cybersecurity Lab Challenges</h1>
+</header>
 
-  <div class="lab">
-    <h2>Examining TCP/IP and OSI Models in Action</h2>
-    <p><strong>Description:</strong> This lab explored the real-time behavior of the OSI and TCP/IP networking models. Using practical examples and Wireshark packet captures, I observed how data is encapsulated and transferred across different layers from application to physical and identified headers and protocols at each step.</p>
-    <p><strong>Tools Used:</strong></p>
-    <ul>
-      <li>Wireshark</li>
-      <li>Packet Tracer (or browser tools)</li>
-      <li>TCP/IP Stack Documentation</li>
-    </ul>
-    <p><strong>Key Takeaways:</strong></p>
-    <ul>
-      <li>Gained practical understanding of all 7 OSI layers</li>
-      <li>Mapped actual traffic to TCP/IP layers (e.g., TCP, IP, Ethernet)</li>
-      <li>Strengthened troubleshooting skills by analyzing packet flow and headers</li>
-    </ul>
-    <p><strong>View Lab:</strong> <a href="https://drive.google.com/file/d/1TFmzmwgZYDrCTCI_Fv770sCNho3d_bFZ/view?usp=drive_link" target="_blank">View File</a></p>
-  </div>
+<section>
+    <div class="lab">
+        <h3>🧪 HTB Academy – Web Requests</h3>
+        <p><strong>Description:</strong> Fundamentals of HTTP/HTTPS protocols using cURL and browser tools.</p>
+        <p><a href="https://drive.google.com/file/d/1f8YTHsx67-XjD2DDyfoB3sQ3SWPbmUfG/view?usp=drive_link" target="_blank">View Lab Report</a></p>
+    </div>
 
-  <div class="lab">
-    <h2>Introduction to HTB Academy</h2>
-    <p><strong>Description:</strong> This lab marked my first exposure to Hack The Box (HTB) Academy, where I learned core cybersecurity concepts in a practical, gamified environment. It introduced basic Linux commands, networking principles, and ethical hacking techniques.</p>
-    <p><strong>Tools/Platform Used:</strong></p>
-    <ul>
-      <li>HTB Academy</li>
-      <li>Linux terminal (via HTB labs)</li>
-      <li>Command-line interface (CLI)</li>
-    </ul>
-    <p><strong>Key Takeaways:</strong></p>
-    <ul>
-      <li>Understood the structure of HTB’s learning paths</li>
-      <li>Learned to interact with virtual machines in a secure lab</li>
-      <li>Developed basic Linux navigation and enumeration skills</li>
-    </ul>
-    <p><strong>View Lab:</strong> <a href="https://drive.google.com/file/d/1QgYE9Rmrno3_G0aKN0MSutMYnHZ-Gd18/view?usp=drive_link" target="_blank">View File</a></p>
-  </div>
+    <div class="lab">
+        <h3>🧪 Use Wireshark to Examine Network Traffic</h3>
+        <p><strong>Description:</strong> Real-time network traffic capture and analysis using Wireshark.</p>
+        <p><a href="https://drive.google.com/file/d/1kVbPLi7QgFzWr8kszT5mEwUwryDfsypF/view?usp=drive_link" target="_blank">View Lab Report</a></p>
+    </div>
 
-  <div class="lab">
-    <h2>Introduction to Network Traffic Analysis</h2>
-    <p><strong>Description:</strong> This lab introduced the foundational concepts of network traffic analysis using tools like Wireshark. I examined how data packets travel across networks and learned to identify common protocols and communication patterns between hosts.</p>
-    <p><strong>Tools Used:</strong></p>
-    <ul>
-      <li>Wireshark</li>
-      <li>TCP/IP Stack</li>
-      <li>Sample PCAP files (Packet Captures)</li>
-    </ul>
-    <p><strong>Key Takeaways:</strong></p>
-    <ul>
-      <li>Learned to filter and inspect different traffic types (HTTP, DNS, TCP, UDP)</li>
-      <li>Gained insights into how attackers can be detected through traffic anomalies</li>
-      <li>Developed basic packet investigation and analysis skills</li>
-    </ul>
-    <p><strong>View Lab:</strong> <a href="https://drive.google.com/file/d/1ulhphDDF_DTbXTXCzx0_hxt7L11KjG8p/view?usp=drive_link" target="_blank">View File</a></p>
-  </div>
+    <div class="lab">
+        <h3>🧪 Introduction to Network Traffic Analysis</h3>
+        <p><strong>Description:</strong> Fundamentals of analyzing protocols like HTTP, DNS, and TCP.</p>
+        <p><a href="https://drive.google.com/file/d/1ulhphDDF_DTbXTXCzx0_hxt7L11KjG8p/view?usp=drive_link" target="_blank">View Lab Report</a></p>
+    </div>
 
-  <div class="lab">
-    <h2>TryHackMe – DNS in Detail</h2>
-    <p><strong>Description:</strong> This lab provided an in-depth exploration of the Domain Name System (DNS), covering its structure, record types, and the process of DNS resolution. Through practical exercises, I gained hands-on experience in querying various DNS record types using tools like nslookup.</p>
-    <p><strong>Tools Used:</strong></p>
-    <ul>
-      <li>nslookup</li>
-      <li>TryHackMe Platform</li>
-    </ul>
-    <p><strong>Key Takeaways:</strong></p>
-    <ul>
-      <li>Understanding the hierarchy of DNS (TLDs, SLDs, subdomains)</li>
-      <li>Familiarity with DNS record types (A, AAAA, CNAME, MX, TXT)</li>
-      <li>Practical experience in querying DNS records</li>
-    </ul>
-    <p><strong>View Lab:</strong> <a href="https://drive.google.com/file/d/1ZBKEjhh-QFYQft-q9JiPoKmGKx9ihEnX/view?usp=drive_link" target="_blank">View File</a></p>
-  </div>
+    <div class="lab">
+        <h3>🧪 Packet Tracer – Build a Switch & Router Network</h3>
+        <p><strong>Description:</strong> Designed a small-scale network and configured routing/VLANs in Cisco Packet Tracer.</p>
+        <p><a href="https://drive.google.com/file/d/12eXdOstLiD_q0t3V5ZZmenib8CHxTmKe/view?usp=drive_link" target="_blank">View Lab Report</a></p>
+    </div>
 
-  <div class="lab">
-    <h2>Building a Switch and Router Network in Packet Tracer</h2>
-    <p><strong>Description:</strong> In this lab, I designed and configured a network topology using Cisco Packet Tracer, incorporating a router, a switch, and two PCs. The objective was to establish inter-network communication by assigning appropriate IP addresses, configuring routing protocols, and verifying connectivity.</p>
-    <p><strong>Tools Used:</strong></p>
-    <ul>
-      <li>Cisco Packet Tracer</li>
-      <li>Cisco 4221 Router</li>
-      <li>Cisco 2960 Switch</li>
-      <li>PC</li>
-    </ul>
-    <p><strong>Key Takeaways:</strong></p>
-    <ul>
-      <li>Developed skills in configuring router interfaces and routing protocols</li>
-      <li>Gained experience in setting up VLANs and assigning IP addresses</li>
-      <li>Verified network connectivity using ping tests and show commands</li>
-    </ul>
-    <p><strong>View Lab:</strong> <a href="https://drive.google.com/file/d/12eXdOstLiD_q0t3V5ZZmenib8CHxTmKe/view?usp=drive_link" target="_blank">View File</a></p>
-  </div>
+    <div class="lab">
+        <h3>🧪 Intro to HTB Academy</h3>
+        <p><strong>Description:</strong> Explored Linux basics, VMs, and command-line navigation on Hack The Box.</p>
+        <p><a href="https://drive.google.com/file/d/1QgYE9Rmrno3_G0aKN0MSutMYnHZ-Gd18/view?usp=drive_link" target="_blank">View Lab Report</a></p>
+    </div>
 
-  <div class="lab">
-    <h2>HTB Academy – Web Requests</h2>
-    <p><strong>Description:</strong> This lab introduced the fundamentals of HTTP and HTTPS protocols, focusing on how web applications utilize these protocols to communicate with their backends. Through practical exercises, I gained hands-on experience in crafting and analyzing HTTP requests using tools like cURL and browser developer tools.</p>
-    <p><strong>Tools Used:</strong></p>
-    <ul>
-      <li>cURL</li>
-      <li>Browser Developer Tools</li>
-      <li>HTB Academy Platform</li>
-    </ul>
-    <p><strong>Key Takeaways:</strong></p>
-    <ul>
-      <li>Understanding the structure of HTTP requests and responses</li>
-      <li>Familiarity with HTTP methods: GET, POST, PUT, DELETE</li>
-      <li>Experience in interacting with APIs and headers</li>
-    </ul>
-    <p><strong>View Lab:</strong> <a href="https://drive.google.com/file/d/1f8YTHsx67-XjD2DDyfoB3sQ3SWPbmUfG/view?usp=drive_link" target="_blank">View File</a></p>
-  </div>
+    <div class="lab">
+        <h3>🧪 Examine TCP/IP and OSI Models in Action</h3>
+        <p><strong>Description:</strong> Mapped captured traffic to OSI & TCP/IP models; analyzed protocol behavior.</p>
+        <p><a href="https://drive.google.com/file/d/1TFmzmwgZYDrCTCI_Fv770sCNho3d_bFZ/view?usp=drive_link" target="_blank">View Lab Report</a></p>
+    </div>
+
+    <div class="lab">
+        <h3>🧪 TryHackMe – DNS in Detail</h3>
+        <p><strong>Description:</strong> In-depth practical DNS exploration: records, resolution, and hierarchy.</p>
+        <p><a href="https://drive.google.com/file/d/1ZBKEjhh-QFYQft-q9JiPoKmGKx9ihEnX/view?usp=drive_link" target="_blank">View Lab Report</a></p>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Naomi Kwamboka Onyancha | <a href="mailto:ateidiana@gmail.com">Email</a> | 
+    <a href="https://www.linkedin.com/in/naomi-kwamboka-0891b5177/" target="_blank">LinkedIn</a>
+</footer>
 
 </body>
 </html>
+
+
