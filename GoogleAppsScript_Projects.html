@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Google Apps Script Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .overlay {
+      background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.75));
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 40px;
+      color: #00e6e6;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 25px 30px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    h2 {
+      color: #00e6e6;
+      margin-top: 0;
+    }
+
+    p {
+      color: #ddd;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+      border: 1px solid #333;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #00e6e6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #333;
+      margin: 40px 0;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <h1>🚀 Google Apps Script Projects Portfolio</h1>
+
+      <div class="card">
+        <h2>🔍 1. Accounts Navigator Button</h2>
+        <p><strong>Purpose:</strong> Quickly navigate & highlight account details from the Sales/Contacts sheet.</p>
+        <p><strong>How it works:</strong> Searches 002_Accounts for a match and highlights the row.</p>
+        <img src="accounts-navigator-button.png" alt="Accounts Navigator Button">
+        <a href="checkAccounts.gs">📜 View Full Script</a>
+      </div>
+
+      <div class="card">
+        <h2>🔄 2. Automatic Sales Stage Updater</h2>
+        <p><strong>Purpose:</strong> Auto-assign "Offered" to new RLM entries without a stage.</p>
+        <p><strong>How it works:</strong> Checks columns in 014_Sales and fills in missing values.</p>
+        <img src="sales-stage-updater.png" alt="Sales Stage Updater">
+        <a href="updateStage.gs">📜 View Full Script</a>
+      </div>
+
+      <div class="card">
+        <h2>📧 3. Automated Email Notification on Deal Closure</h2>
+        <p><strong>Purpose:</strong> Sends emails when a deal is marked Closed.</p>
+        <p><strong>How it works:</strong> Tracks status and sends only once with a timestamp.</p>
+        <img src="email-notification-script.png" alt="Email Notification Script">
+        <a href="sendEmailOnDealClosure.gs">📜 View Full Script</a>
+      </div>
+
+      <div class="card">
+        <h2>📅 4. Sorted Popup Sheet for Imported Data</h2>
+        <p><strong>Purpose:</strong> Imports and sorts external data by date.</p>
+        <p><strong>How it works:</strong> Uses URL and sorting to show data clearly.</p>
+        <img src="sorted-popup-sheet.png" alt="Sorted Popup Sheet">
+        <a href="sortImportrangePopupSheet.gs">📜 View Full Script</a>
+      </div>
+
+      <div class="card">
+        <h2>🔄 5. Backup Restore for Manual Data Sync</h2>
+        <p><strong>Purpose:</strong> Ensures backup sheet matches the main sheet manually.</p>
+        <p><strong>How it works:</strong> Matches by title and restores data into the correct rows.</p>
+        <img src="backup-restore-sync.png" alt="Backup Restore Script">
+        <a href="restoreManualData.gs">📜 View Full Script</a>
+      </div>
+
+      <div class="card">
+        <h2>🚨 6. Highlight Missing Rows in Backup Sheet</h2>
+        <p><strong>Purpose:</strong> Show which rows are in backup but not in main.</p>
+        <p><strong>How it works:</strong> Highlights red if missing in the main sheet.</p>
+        <img src="highlight-missing-rows.png" alt="Highlight Missing Rows">
+        <a href="highlightMissingRowsInBackup.gs">📜 View Full Script</a>
+      </div>
+
+      <div class="card">
+        <h2>⚙️ 7. Find Missing Titles and Auto-Add to Backup</h2>
+        <p><strong>Purpose:</strong> Prompt to auto-add titles missing from backup.</p>
+        <p><strong>How it works:</strong> Compares titles and confirms before adding.</p>
+        <img src="find-missing-titles-auto-add.png" alt="Find Missing Titles Script">
+        <a href="findMissingTitles.gs">📜 View Full Script</a>
+      </div>
+
+      <div class="card">
+        <p>💡 <strong>Tip:</strong> Use consistent sheet names and unique headers for best results.</p>
+        <p>Need help with <strong>buttons</strong>, <strong>menus</strong>, or <strong>triggers</strong>? Reach out anytime!</p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
+
+
