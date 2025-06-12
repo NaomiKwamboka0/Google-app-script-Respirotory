@@ -62,24 +62,6 @@
       border: 1px solid #333;
     }
 
-    a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #00e6e6;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    hr {
-      border: 0;
-      border-top: 1px solid #333;
-      margin: 40px 0;
-    }
-
     @media (max-width: 600px) {
       h1 {
         font-size: 2rem;
@@ -93,69 +75,51 @@
       <h1>🚀 Google Apps Script Projects Portfolio</h1>
 
       <div class="card">
-        <h2>🔍 1. Accounts Navigator Button</h2>
-        <p><strong>Purpose:</strong> Quickly navigate & highlight account details from the Sales/Contacts sheet.</p>
-        <p><strong>How it works:</strong> Searches 002_Accounts for a match and highlights the row.</p>
-        <img src="accounts-navigator-button.png" alt="Accounts Navigator Button">
-        <a href="checkAccounts.gs">📜 View Full Script</a>
+        <h2>🔍 1. Dynamic Sheet Navigation Tool</h2>
+        <p>Enables bi-directional navigation between interlinked datasets across multiple sheets. Selecting a reference cell triggers contextual highlighting and auto-focus to corresponding records in a target sheet, reducing lookup time and enhancing relational data workflows.</p>
+        <img src="accounts-navigator-button.png" alt="Dynamic Sheet Navigator">
       </div>
 
       <div class="card">
-        <h2>🔄 2. Automatic Sales Stage Updater</h2>
-        <p><strong>Purpose:</strong> Auto-assign "Offered" to new RLM entries without a stage.</p>
-        <p><strong>How it works:</strong> Checks columns in 014_Sales and fills in missing values.</p>
-        <img src="sales-stage-updater.png" alt="Sales Stage Updater">
-        <a href="updateStage.gs">📜 View Full Script</a>
+        <h2>🔄 2. Conditional Data Enrichment Automation</h2>
+        <p>Automatically updates specific fields based on conditional logic, ensuring consistency in data pipelines. Particularly useful for enriching incomplete records when trigger conditions (e.g., ID presence) are met.</p>
+        <img src="sales-stage-updater.png" alt="Conditional Updater">
       </div>
 
       <div class="card">
-        <h2>📧 3. Automated Email Notification on Deal Closure</h2>
-        <p><strong>Purpose:</strong> Sends emails when a deal is marked Closed.</p>
-        <p><strong>How it works:</strong> Tracks status and sends only once with a timestamp.</p>
-        <img src="email-notification-script.png" alt="Email Notification Script">
-        <a href="sendEmailOnDealClosure.gs">📜 View Full Script</a>
+        <h2>📧 3. Automated Notification System</h2>
+        <p>Implements an event-driven notification engine that dispatches customized email alerts to relevant stakeholders when predefined conditions (e.g., stage transitions) occur. Includes duplicate suppression via status tagging.</p>
+        <img src="email-notification-script.png" alt="Automated Email Notification">
       </div>
 
       <div class="card">
-        <h2>📅 4. Sorted Popup Sheet for Imported Data</h2>
-        <p><strong>Purpose:</strong> Imports and sorts external data by date.</p>
-        <p><strong>How it works:</strong> Uses URL and sorting to show data clearly.</p>
-        <img src="sorted-popup-sheet.png" alt="Sorted Popup Sheet">
-        <a href="sortImportrangePopupSheet.gs">📜 View Full Script</a>
+        <h2>📅 4. Remote Data Fetching with Sorted Output</h2>
+        <p>Fetches external spreadsheet data via URL, sorts it chronologically or by custom rules, and renders it within a structured auxiliary view for on-demand reference or reporting.</p>
+        <img src="sorted-popup-sheet.png" alt="Sorted Import Sheet">
       </div>
 
       <div class="card">
-        <h2>🔄 5. Backup Restore for Manual Data Sync</h2>
-        <p><strong>Purpose:</strong> Ensures backup sheet matches the main sheet manually.</p>
-        <p><strong>How it works:</strong> Matches by title and restores data into the correct rows.</p>
-        <img src="backup-restore-sync.png" alt="Backup Restore Script">
-        <a href="restoreManualData.gs">📜 View Full Script</a>
+        <h2>🔄 5. Data Synchronization Between Sources</h2>
+        <p>Performs intelligent field restoration from backup datasets to maintain data integrity after destructive operations like sorting or row deletions. Ensures continuity of manually entered content.</p>
+        <img src="backup-restore-sync.png" alt="Sync Script">
       </div>
 
       <div class="card">
-        <h2>🚨 6. Highlight Missing Rows in Backup Sheet</h2>
-        <p><strong>Purpose:</strong> Show which rows are in backup but not in main.</p>
-        <p><strong>How it works:</strong> Highlights red if missing in the main sheet.</p>
-        <img src="highlight-missing-rows.png" alt="Highlight Missing Rows">
-        <a href="highlightMissingRowsInBackup.gs">📜 View Full Script</a>
+        <h2>🚨 6. Discrepancy Detection in Mirrored Datasets</h2>
+        <p>Scans parallel datasets for row mismatches and flags missing entries via conditional formatting. Facilitates anomaly detection and accelerates manual reconciliation workflows.</p>
+        <img src="highlight-missing-rows.png" alt="Discrepancy Highlighter">
       </div>
 
       <div class="card">
-        <h2>⚙️ 7. Find Missing Titles and Auto-Add to Backup</h2>
-        <p><strong>Purpose:</strong> Prompt to auto-add titles missing from backup.</p>
-        <p><strong>How it works:</strong> Compares titles and confirms before adding.</p>
-        <img src="find-missing-titles-auto-add.png" alt="Find Missing Titles Script">
-        <a href="findMissingTitles.gs">📜 View Full Script</a>
+        <h2>⚙️ 7. Automated Key Injection Utility</h2>
+        <p>Identifies absent primary keys or titles in secondary datasets and optionally appends them, ensuring structural parity across interconnected sheets. Includes user confirmation to prevent unwanted writes.</p>
+        <img src="find-missing-titles-auto-add.png" alt="Missing Title Injector">
       </div>
 
       <div class="card">
-        <p>💡 <strong>Tip:</strong> Use consistent sheet names and unique headers for best results.</p>
-        <p>Need help with <strong>buttons</strong>, <strong>menus</strong>, or <strong>triggers</strong>? Reach out anytime!</p>
+        <p>💡 <strong>Note:</strong> All scripts leverage Google Apps Script triggers, custom UIs, and built-in SpreadsheetApp services to deliver seamless low-code automation within the Google Workspace ecosystem.</p>
       </div>
-
     </div>
   </div>
 </body>
 </html>
-
-
